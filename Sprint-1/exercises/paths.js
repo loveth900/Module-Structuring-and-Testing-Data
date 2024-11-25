@@ -8,20 +8,18 @@
 // └──────┴──────────────┴──────┴─────┘
 
 // (All spaces in the "" line should be ignored. They are purely for formatting.)
-
-window.location.href = "file:///C:/Users/mitch/documents/project/file.txt";
-const lastSlashIndex = filePath.lastIndexOf("\\");
+const filePath = "/Users/mitch/cyf/Module-JS1/week-1/interpret/file.txt";
+const lastSlashIndex = filePath.lastIndexOf("/");
 const base = filePath.slice(lastSlashIndex + 1);
 console.log(`The base part of ${filePath} is ${base}`);
 
 // Create a variable to store the dir part of the filePath variable 
-// Extract the dir part (everything before the last '\')
-const dir = filePath.slice(0, lastBackslashIndex);
-// Find the last dot index in the `base` to extract the `ext` part
-const lastDotIndex = base.lastIndexOf(".");
-const ext = base.slice(lastDotIndex); // Includes the dot
+const StartDirIndex = filePath.indexOf("/"); 
+const LastDirIndex = filePath.lastIndexOf("/");
+const dir = filePath.slice(StartDirIndex,LastDirIndex); 
+console.log(`The dir part of ${filePath} is ${dir}`)
 // Create a variable to store the ext part of the variable
+const DotIndex = filePath.lastIndexOf("."); 
+const ext = filePath.slice(DotIndex);
+console.log(`The ext part of ${filePath} is ${ext}`)
 
-// Log the results
-console.log(`Dir: ${dir}`); 
-console.log(`Ext: ${ext}`); 
