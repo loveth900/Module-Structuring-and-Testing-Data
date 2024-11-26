@@ -13,3 +13,26 @@
 
 // You will need to come up with an appropriate name for the function
 // Use the string documentation to help you find a solution
+
+
+function convertToUpperSnakeCase(inputString) {
+    // Step 1: Replace spaces with underscores
+    const stringWithUnderscores = inputString.replace(/ /g, "_");
+    
+    // Step 2: Convert to uppercase
+    const upperSnakeCase = stringWithUnderscores.toUpperCase();
+
+    return upperSnakeCase;
+}
+
+// Example Usage
+console.log(convertToUpperSnakeCase("hello there"));       // Output: "HELLO_THERE"
+console.log(convertToUpperSnakeCase("lord of the rings")); // Output: "LORD_OF_THE_RINGS"
+console.log(convertToUpperSnakeCase("programming fun"));   // Output: "PROGRAMMING_FUN"
+
+
+console.log(convertToUpperSnakeCase("hello world"));       // Output: "HELLO_WORLD"
+console.log(convertToUpperSnakeCase("a quick brown fox")); // Output: "A_QUICK_BROWN_FOX"
+console.log(convertToUpperSnakeCase("UPPER snake CASE"));  // Output: "UPPER_SNAKE_CASE"
+console.log(convertToUpperSnakeCase("  extra spaces "));   // Output: "EXTRA_SPACES"
+console.log(convertToUpperSnakeCase(""));                 // Output: ""
