@@ -22,3 +22,21 @@ console.assert(
   currentOutput2 === targetOutput2,
   `current output: ${currentOutput2}, target output: ${targetOutput2}`
 );
+
+const tests = [
+  { input: "08:00", expected: "08:00 am" },
+  { input: "23:00", expected: "11:00 pm" },
+  { input: "00:00", expected: "12:00 am" },
+  { input: "12:00", expected: "12:00 pm" },
+  { input: "00:01", expected: "12:01 am" },
+  { input: "12:01", expected: "12:01 pm" },
+  { input: "13:00", expected: "1:00 pm" },
+];
+
+tests.forEach(({ input, expected }) => {
+  const output = formatAs12HourClock(input);
+  console.assert(
+    output === expected,
+    `Test failed for input "${input}". Output: "${output}", Expected: "${expected}"`
+  );
+});
