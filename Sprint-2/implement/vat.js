@@ -8,3 +8,13 @@
 // Given a number,
 // When I call this function with a number
 // it returns the new price with VAT added on
+
+
+function addVAT(price) {
+    // Multiply the price by 1.2 to add 20% VAT
+    const vatInclusivePrice = price * 1.2;
+  
+    // Return the result, rounded to 2 decimal places
+    return parseFloat(vatInclusivePrice.toFixed(2));
+  }
+  
