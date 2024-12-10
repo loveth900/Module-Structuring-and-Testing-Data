@@ -13,3 +13,16 @@
 
 // You will need to come up with an appropriate name for the function
 // Use the string documentation to help you find a solution
+
+
+function toUpperSnakeCase(input) {
+    // Step 1: Replace spaces with underscores
+    const snakeCase = input.replace(/ /g, "_");
+  
+    // Step 2: Convert the string to uppercase
+    const upperSnakeCase = snakeCase.toUpperCase();
+  
+    // Step 3: Return the result
+    return upperSnakeCase;
+  }
+  
