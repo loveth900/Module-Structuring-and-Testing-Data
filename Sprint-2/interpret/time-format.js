@@ -29,3 +29,6 @@ function formatTimeDisplay(seconds) {
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
 
 // e) What is the return value assigned to num when pad is called for the last time in this program?  Explain your answer
+
+
+return `${pad(0)}:${pad(1)}:${pad(1)}`; // "00:01:01"
