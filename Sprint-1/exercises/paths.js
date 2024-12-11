@@ -18,7 +18,7 @@ const StartDirIndex = filePath.indexOf("/");
 const LastDirIndex = filePath.lastIndexOf("/");
 const dir = filePath.slice(StartDirIndex,LastDirIndex); 
 console.log(`The dir part of ${filePath} is ${dir}`)
-// Create a variable to store the ext part of the variable
+// Create a variable to store the ext part of the variable 
 const DotIndex = filePath.lastIndexOf("."); 
 const ext = filePath.slice(DotIndex);
 console.log(`The ext part of ${filePath} is ${ext}`)
