@@ -22,3 +22,14 @@ console.log(result);
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+
+if (movieLength < 0) {
+    console.log("Invalid movie length");
+} else {
+    let totalMinutes = movieLength % 60;
+    let totalHours = (movieLength - totalMinutes) / 60;
+    let result = totalHours + " hours and " + totalMinutes + " minutes";
+    console.log(result);
+}
+
+
