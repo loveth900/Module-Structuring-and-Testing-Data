@@ -23,3 +23,15 @@ console.log(find("code your future", "z"));
 // b) What is the if statement used to check
 // c) Why is index++ being used?
 // d) What is the condition index < str.length used for?
+
+
+function find(str, target) {
+  let index = 0; // Initialize the index to 0
+  while (index < str.length) { // Continue as long as index is less than the string's length
+      if (str[index] === target) { // Check if the current character matches the target
+          return index; // If a match is found, return the current index
+      }
+      index++; // Increment the index to check the next character in the string
+  }
+  return -1; // If the target is not found, return -1
+}
