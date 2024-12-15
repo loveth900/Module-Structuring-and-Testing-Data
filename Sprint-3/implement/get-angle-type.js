@@ -39,4 +39,4 @@ function getAngleType(angle) {
 
 // Example usage
 console.log(getAngleType(90)); // Output: "Right angle"
-console.log(getAngleType(45)); // Output: "Unknown angle type"
+console.log(getAngleType(45)); // Output: "Unknown angle type" 
